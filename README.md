@@ -1,10 +1,12 @@
 # translation-facts
 
-Check that the numbers, prices, URLs and placeholders in a string survive translation.
+Translation quality assurance for the facts in a string: check that the numbers, prices, URLs and placeholders survive translation.
 
 [![npm version](https://img.shields.io/npm/v/translation-facts)](https://www.npmjs.com/package/translation-facts)
 [![license](https://img.shields.io/npm/l/translation-facts)](https://www.npmjs.com/package/translation-facts)
 [![node version](https://img.shields.io/node/v/translation-facts)](https://www.npmjs.com/package/translation-facts)
+
+Guide, examples and FAQ: https://oss.saimulislam.com/translation-facts/
 
 Extracted from [Sitessa](https://sitessa.com), a headless CMS, where it checks translations before they are saved.
 

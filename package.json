@@ -1,21 +1,24 @@
 {
   "name": "translation-facts",
-  "version": "0.1.0",
-  "description": "Check that the numbers, prices, percentages, URLs, emails and {placeholders} in a string survive translation.",
+  "version": "0.1.1",
+  "description": "Translation quality assurance for i18n JSON: check that numbers, prices, URLs, emails and placeholders survive machine translation.",
   "keywords": [
-    "translation",
+    "translation quality assurance",
+    "localization qa",
+    "translation checker",
+    "localization testing",
+    "i18n testing",
+    "missing translations",
     "i18n",
     "l10n",
-    "localization",
     "i18next",
     "next-intl",
     "placeholders",
-    "qa",
-    "lint",
     "machine-translation",
-    "ai-translation"
+    "ai-translation",
+    "qa"
   ],
-  "homepage": "https://github.com/saimulft/translation-facts#readme",
+  "homepage": "https://oss.saimulislam.com/translation-facts/",
   "bugs": {
     "url": "https://github.com/saimulft/translation-facts/issues"
   },
