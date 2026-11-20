@@ -1,0 +1,12 @@
+{
+  "pricing": {
+    "title": "Acme pricing, made simple",
+    "standard": "Acme Standard is $49.99 per month for 5 seats.",
+    "discount": "Save 20% when you pay yearly.",
+    "contact": "Questions? Write to sales@acme.example or visit https://acme.example/pricing."
+  },
+  "cart": {
+    "greeting": "Hello {name}, your order ships in 3 days.",
+    "total": "Total: {{amount}}"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "name": "translation-facts",
+  "version": "0.1.0",
+  "description": "Check that the numbers, prices, percentages, URLs, emails and {placeholders} in a string survive translation.",
+  "keywords": [
+    "translation",
+    "i18n",
+    "l10n",
+    "localization",
+    "i18next",
+    "next-intl",
+    "placeholders",
+    "qa",
+    "lint",
+    "machine-translation",
+    "ai-translation"
+  ],
+  "homepage": "https://github.com/saimulft/translation-facts#readme",
+  "bugs": {
+    "url": "https://github.com/saimulft/translation-facts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimulft/translation-facts.git"
+  },
+  "license": "MIT",
+  "author": "Saimul Islam (https://github.com/saimulft)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "translation-facts": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "lint": "eslint . && npm run lint:names",
+    "lint:names": "ls-lint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@ls-lint/ls-lint": "^2.3.2",
+    "@types/node": "^20.19.43",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0",
+    "prettier": "^3.10.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.73.0"
+  }
+}

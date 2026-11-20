@@ -1,0 +1,5 @@
+{
+  "pricing.standard": "Acme Standard প্রতি মাসে $৪৯.৯৯, ৫টি সিটের জন্য।",
+  "pricing.discount": "বছরে একবার দিলে ২০% ছাড়।",
+  "cart.greeting": "হ্যালো {name}, আপনার অর্ডার ৩ দিনে পৌঁছাবে।"
+}
