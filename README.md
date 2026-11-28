@@ -1,18 +1,47 @@
-# translation-facts
+<h1 align="center">translation-facts</h1>
 
-Translation quality assurance for the facts in a string: check that the numbers, prices, URLs and placeholders survive translation.
+<p align="center">
+  Translation quality assurance for the facts in a string: check that the numbers, prices, URLs and placeholders survive translation.
+</p>
 
-[![npm version](https://img.shields.io/npm/v/translation-facts)](https://www.npmjs.com/package/translation-facts)
-[![license](https://img.shields.io/npm/l/translation-facts)](https://www.npmjs.com/package/translation-facts)
-[![node version](https://img.shields.io/node/v/translation-facts)](https://www.npmjs.com/package/translation-facts)
+<p align="center">
+  <a href="https://www.npmjs.com/package/translation-facts"><img alt="npm version" src="https://img.shields.io/npm/v/translation-facts" /></a>
+  <a href="https://www.npmjs.com/package/translation-facts"><img alt="license" src="https://img.shields.io/npm/l/translation-facts" /></a>
+  <a href="https://www.npmjs.com/package/translation-facts"><img alt="node version" src="https://img.shields.io/node/v/translation-facts" /></a>
+</p>
 
-Guide, examples and FAQ: https://oss.saimulislam.com/translation-facts/
+<p align="center">
+  <a href="https://oss.saimulislam.com/translation-facts/">Guide, examples and FAQ</a> ·
+  <a href="https://www.npmjs.com/package/translation-facts">npm</a> ·
+  <a href="https://github.com/saimulft/translation-facts">GitHub</a> ·
+  <a href="https://github.com/saimulft/translation-facts/blob/main/CHANGELOG.md">Changelog</a>
+</p>
+
+<p align="center">
+  <a href="https://oss.saimulislam.com/translation-facts/">
+  <img alt="en.json and de.json side by side with the facts highlighted: the brand Acme missing, $49.99 changed to 49,99 euros, 20% missing, the email and URL changed, the {name} placeholder renamed to {nom}, and one row that is fine" src="https://oss.saimulislam.com/shots/translation-facts/side-by-side.webp" width="880" />
+  </a>
+</p>
+
+<p align="center">
+  <b>What changed in translation.</b> Prices, percentages, emails, URLs, placeholders and brand terms are compared key by key.
+</p>
 
 Extracted from [Sitessa](https://sitessa.com), a headless CMS, where it checks translations before they are saved.
 
 A machine or AI translation can read fine and still change `$49.99` to `$59.99`, drop `20%`, translate `{name}` to `{nom}` or point a link at the wrong page. translation-facts pulls the facts out of each source string (numbers, prices, percentages, URLs, emails, `{placeholders}` and terms you want kept) and checks that every one of them is still in the translation. Tools such as i18next-cli and i18n-check compare keys and placeholders, but not whether the numbers, prices and links inside the text survived.
 
 It has no dependencies and works on JSON message files (flat or nested, i18next and next-intl style) or on single strings.
+
+## See it work
+
+### The report
+
+One line per problem, with the key and the kind of fact.
+
+<img alt="translation-facts in a terminal: de.json with 6 problems, each with the key, what changed and the kind of fact, and fr.json clean" src="https://oss.saimulislam.com/shots/translation-facts/check.webp" width="880" />
+
+More examples and the FAQ are on the [guide](https://oss.saimulislam.com/translation-facts/).
 
 ## Install
 

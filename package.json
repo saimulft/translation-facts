@@ -1,6 +1,6 @@
 {
   "name": "translation-facts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Translation quality assurance for i18n JSON: check that numbers, prices, URLs, emails and placeholders survive machine translation.",
   "keywords": [
     "translation quality assurance",
